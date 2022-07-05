@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Sarah Linsdall</title>
+        <link rel="shortcut icon" type="img/jpg" href="">
+        <link rel="stylesheet" type="text/css" href="./Portfolio_Website.css">
+    </head>
+
+    <body class="Background">
+
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a onclick="openForm()" ondbclick="closeForm()" class="contact">Contact</a>
+        </div>
+
+
+        <br>
+        <br>
+
+
+        <div id="Home">
+            <video autoplay muted loop id="Future_Video">
+                <source src="Technology.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+
+            </video>
+            <div class="Video_Text">
+                <h1 class="white-text">Sarah Linsdall's Portfolio</h1>
+                <strong>
+                    <p class="center">
+                        <q>Controlling complexity is the essence of computer programming.
+                        </q>
+                        <br>-Brian Kernighan
+                        <br>
+                        <br>My name is Sarah Linsdall. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                        <br>
+                        <br>Thank you for stopping by and enjoy!
+                    </p>
+                </strong>
+            </div>
+
+            <!--Slideshow section added-->
+            <div id="Slideshow">
+                <div id="Slideshow_Background">
+                    <div id="Slideshow_Container">
+                        <!--Slide 1 of 6-->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="Headshot.jpg" alt="">
+                            <div class="text">I'm available to assist you on your project!</div>
+                        </div>
+                        <!--Slide 2 of 6-->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="HTML_CSS_and_JavaScript.jpeg" alt="">
+                            <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                        </div>
+                        <!--Slide 3 of 6-->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="Python.png" alt="">
+                            <div class="text">the popular programming language Python,</div>
+                        </div>
+                        <!--Slide 4 of 6-->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="C_Sharp_and_Dot_NET.png" alt="">
+                            <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                        </div>
+                        <!--Slide 5 of 6-->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="SQL_and_Database.jpg" alt="">
+                            <div class="text">back end development, databases and SQL.</div>
+                        </div>
+                        <!--Slide 6 of 6-->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="OIP.jpg" alt="">
+                            <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                        </div>
+                        <!--Previous and next buttons-->
+                        <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                     </div>
+                     <br><!--Adds a space between the slideshow images and the dots-->
+
+                     <!--Slideshow dots(these are another way for users to navigate through the slideshow)-->
+                     <div style="text-align: center">
+                        <span class="dot" onlcick="currentSlide(1)"></span>
+                        <span class="dot" onlcick="currentSlide(2)"></span>
+                        <span class="dot" onlcick="currentSlide(3)"></span>
+                        <span class="dot" onlcick="currentSlide(4)"></span>
+                        <span class="dot" onlcick="currentSlide(5)"></span>
+                        <span class="dot" onlcick="currentSlide(6)"></span>
+                    </div>
+                </div>
+            </div>
+            <!--About section-->
+
+            <div class="Row" id="About">
+
+                <div class="Column_2">
+                    <img src="Earth_Network.jpg" alt="Earth Netowrk">
+                </div>
+
+                <div class="Column_1">
+                    <h1>About</h1>
+                    <p>
+                        I am a computer programmer, I love to problem solve and continuously learn to improve myself.
+                        <br>
+                        <br>I am a graduate of <a href="https://www.learncodinganywhere/com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL,C# and more.
+                        <br>
+                        <br>I am a full-stack developer and would love to work with you on your project.<a href="#Contact">Contact </a>me below!
+                    </p>
+                </div>
+            </div>
+
+            <div class="Row" id="GitHub">
+
+                <div class="Column_1">
+                    <h1>GitHub</h1>
+                    <p>
+                        You can view my coding projects on my GitHub profile here:
+                        <br>
+                        <p class="center"><a href="https://github.com/slinsdall" target="_blank">Sarah Linsdall's GitHub </a></p>
+                    </p>
+                </div>
+
+                <div class="Column_2">
+
+                    <a href="https://github.com/" target="_blank"><img src="./GitHub.png" alt="GitHub Logo">
+                    </a>
+                </div>
+            </div>
+
+            <div class="Row" id="Contact">
+                
+                    <!--Contact image, left column-->
+                    <div class="Column_2 Column_tall">
+                        <img src="Laptop_Coffee_Notebook.jpg" alt="Contact_Image">
+                    </div>
+
+                <div class="Column_1 Column_tall">
+
+        
+                <!--contact form-->
+                    <div id="Contact">
+                        <button onclick="openForm()" class="Pop_Up_Button">Contact</button>
+                        <div class="form-popup" id="myForm">
+                            <form action="https://formspree.io/slinsdall25@hotmail.com" method="post" class="form_container">
+                                <h1>Contact</h1>
+                                <label for="name"><b>Name</b></label>
+                                <input type="text" placeholder="Type your name here" name="name" required>
+                                <label for="phone"><b>Phone Number</b></label>
+                                <input type="text" placeholder="Type your phone number here" name="phone" required>
+                                <label for="email"><b>Email</b></label>
+                                <input type="text" placeholder="Type your email here" name="email" required>
+                                <label for="message"><b>Message</b></label>
+                                <input type="text" placeholder="Type your message here" name="message" required>
+
+                                <button type="submit" class="btn">SUBMIT</button>
+                                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                            </form>
+                        </div>
+                    </div>
+            <!--Footer section-->
+            <footer>
+                <p>
+                    <p class="center">&copy Prosper Consulting Inc.,<a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                    <br>
+                </p>
+            </footer>
+            <script src="portfolio.js"></script>
+        </body>
+        </html>
+        
+
